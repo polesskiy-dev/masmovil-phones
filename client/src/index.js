@@ -1,8 +1,37 @@
+/* eslint-disable react/jsx-filename-extension */
+import 'rxjs';
+
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createEpicMiddleware } from 'redux-observable';
+import { applyMiddleware, createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+
 import './index.css';
-import App from './App';
+
+import rootReducer from './reducer.root';
+import rootEpic from './epic.root';
+import App from './components/containers/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// store initial state, mostly splitted to combined reducers initial states
+const initialState = {};
+const epicMiddleware = createEpicMiddleware();
+
+const store = createStore(
+  rootReducer,
+  initialState,
+  composeWithDevTools(applyMiddleware(epicMiddleware))
+);
+
+epicMiddleware.run(rootEpic);
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
+
 registerServiceWorker();
