@@ -7,6 +7,7 @@
     [ ] Deploy on Heroku
     [ ] Dockerazing
     [ ] Internationalization EN/ES
+    [ ] Theme switching
     [ ] Unit tests
     [ ] API docs
     [x] Travis
@@ -38,6 +39,7 @@ Let's keep component code/styles/tests in folders with appropriate name:
 and other folders by business rules, it can be `forms`, `hocs`.
 
 #### styles
+* `common-styles` folder
 Let's follow [7-1 sass pattern](https://sass-guidelin.es/#the-7-1-pattern)
 
 ## Code conventions

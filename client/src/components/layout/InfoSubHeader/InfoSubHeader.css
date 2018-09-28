@@ -1,0 +1,12 @@
+.info-sub-header__wrapper {
+    width: 100%;
+    height: 64px;
+    /*padding: 0 16px;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /*font-size: @header-font-size;*/
+    background-color: var(--sub-header-bg-color);
+    color: var(--sub-header-text-color);
+}
