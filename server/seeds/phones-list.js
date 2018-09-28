@@ -1,5 +1,5 @@
 /**
- * This list fetched from
+ * This data list fetched from
  * You can use curl to fetch:
  * curl -X POST \
  * https://fonoapi.freshpixl.com/v1/getdevice \
@@ -10,11 +10,15 @@
  *	"device": "iphone",
  *	"brand": "apple"
  * }'
+ *
+ * Imgs are from https://en.wikipedia.org/wiki/List_of_iOS_devices
  */
 const phonesList = [
   {
     DeviceName: 'Apple iPhone',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/0/02/IPhone_2G_PSD_Mock.png',
     technology: 'GSM',
     gprs: 'Yes',
     edge: 'Yes',
@@ -62,6 +66,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 3G',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/c/c6/IPhone_PSD_White_3G.png',
     technology: 'GSM / HSPA',
     gprs: 'Yes',
     edge: 'Yes',
@@ -113,6 +119,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 3GS',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/c/c6/IPhone_PSD_White_3G.png',
     technology: 'GSM / HSPA',
     gprs: 'Yes',
     edge: 'Yes',
@@ -167,6 +175,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 4',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/5/59/IPhone_4_Mock_No_Shadow_PSD.png',
     technology: 'GSM / HSPA',
     gprs: 'Class 10',
     edge: 'Class 10',
@@ -224,6 +234,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 4 CDMA',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/5/59/IPhone_4_Mock_No_Shadow_PSD.png',
     technology: 'CDMA / EVDO',
     gprs: 'No',
     edge: 'No',
@@ -271,6 +283,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 4s',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/d/d2/IPhone_4S_No_shadow.png',
     technology: 'GSM / CDMA / HSPA / EVDO',
     gprs: 'Yes',
     edge: 'Yes',
@@ -329,6 +343,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 5',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/f/fa/IPhone_5.png',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -389,6 +405,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 5s',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/d/d9/IPhone_5s_golden.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -451,6 +469,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 5c',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/9/97/IPhone_5C_%28blue%29.svg',
     technology: 'GSM / CDMA / HSPA / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -512,6 +532,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 6',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/0/01/IPhone6_silver_frontface.png',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -579,6 +601,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 6 Plus',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/5/55/IPhone_6_Plus_Space_Gray.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -646,6 +670,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 6s',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/9/9b/IPhone_6s_vector.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -712,6 +738,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 6s Plus',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/f/f8/IPhone_6s_Plus_vector.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -778,6 +806,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone SE',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/c/c0/IPhone_SE_Rose_Gold.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -844,6 +874,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 8 Plus',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/7/70/IPhone_8_plus_vector.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -903,6 +935,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 7 Plus',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/6/64/IPhone_7_Plus_Jet_Black.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -974,6 +1008,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 7',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/1/18/IPhone_7_Jet_Black.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -1044,6 +1080,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone 8',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/5/5d/IPhone_8_vector.svg',
     technology: 'GSM / HSPA / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -1116,6 +1154,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone X',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/3/32/IPhone_X_vector.svg',
     technology: 'GSM / HSPA / LTE',
     gprs: 'Yes',
     edge: 'Yes',
@@ -1185,6 +1225,8 @@ const phonesList = [
   {
     DeviceName: 'Apple iPhone XR',
     Brand: 'Apple',
+    img:
+      'https://upload.wikimedia.org/wikipedia/commons/e/e9/IPhone_XR_Blue.svg',
     technology: 'GSM / CDMA / HSPA / EVDO / LTE',
     gprs: 'Yes',
     edge: 'Yes',
