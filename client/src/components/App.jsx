@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import { IntlProvider } from 'react-intl';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,23 +9,15 @@ import '../common-styles/base/base.css';
 import '../common-styles/base/normalize.css';
 import './App.css';
 
+import ConnectedIntlProvider from './containers/ConnectedIntlProvider/ConnectedIntlProvider';
 import AppMenuHeader from './containers/AppMenuHeader/AppMenuHeader';
 import DescriptionJumbotron from './presentional/DescriptionJumbotron/DescriptionJumbotron';
 import PhoneListContainer from './containers/PhoneListContainer/PhoneListContainer';
-import messages_es from '../translations/es.json';
-import messages_en from '../translations/en.json';
-
-const messages = {
-  es: messages_es,
-  en: messages_en,
-};
-
-const language = 'es';
 
 class App extends PureComponent {
   render() {
     return (
-      <IntlProvider locale={language} messages={messages[language]}>
+      <ConnectedIntlProvider>
         <div className="main-app">
           <header>
             <AppMenuHeader />
@@ -36,7 +27,7 @@ class App extends PureComponent {
             <PhoneListContainer />
           </main>
         </div>
-      </IntlProvider>
+      </ConnectedIntlProvider>
     );
   }
 }

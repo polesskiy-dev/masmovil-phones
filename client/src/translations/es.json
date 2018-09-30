@@ -1,6 +1,10 @@
 {
   "Buttons.detailsButtonCaption": "Detalles",
 
+  "AppMenuHeader.greeting": "¡Bienvenido!",
+  "AppMenuHeader.language": "Idioma:",
+  "AppMenuHeader.theme": "Tema:",
+
   "DescriptionJumbotron.header": "Ejemplo de la aplicación Phone Catalog",
   "DescriptionJumbotron.message": "Aplicación de catálogo de productos muy simple con algunas características modernas de React",
   "DescriptionJumbotron.repoLinkCaption": "Ver fuente y descripción en Github"
