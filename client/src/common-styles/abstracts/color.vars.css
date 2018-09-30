@@ -1,4 +1,4 @@
-:root {
+.light-theme {
     --main-bg-color: #f8f9fa;
 
     --app-menu-bg-color: #212529;
@@ -8,6 +8,21 @@
 
     --phone-card-bg-color: white;
     --phone-card-name-color: black;
+
+    --details-button-bg-color: #88C23F;
+    --details-button-color: white;
+}
+
+.dark-theme {
+    --main-bg-color: black;
+
+    --app-menu-bg-color: white;
+    --app-menu-text-color: black;
+
+    --app-jumbotron-bg-color: black;
+
+    --phone-card-bg-color: black;
+    --phone-card-name-color: white;
 
     --details-button-bg-color: #88C23F;
     --details-button-color: white;

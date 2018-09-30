@@ -9,6 +9,10 @@ class CircleIterator {
 
   next() {
     this.calls++;
+    return this.current();
+  }
+
+  current() {
     const cursor = this.calls % this.list.length;
 
     return this.list[cursor];

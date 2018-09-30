@@ -18,7 +18,7 @@ class App extends PureComponent {
   render() {
     return (
       <ConnectedIntlProvider>
-        <div className="main-app">
+        <div className="main-app light-theme">
           <header>
             <AppMenuHeader />
           </header>

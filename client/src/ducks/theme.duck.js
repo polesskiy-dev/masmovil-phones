@@ -1,15 +1,39 @@
 import _ from 'lodash/fp';
 import { createAction } from 'redux-actions';
 
+import { ofType } from 'redux-observable';
+import { switchMap } from 'rxjs/operators';
+
 import CircleIterator from '../helpers/CircleIterator';
+import { getTheme } from '../selectors/theme.selector';
 
 export const SWITCH_THEME = 'SWITCH_THEME';
 export const switchTheme = createAction(SWITCH_THEME);
 const themes = ['light', 'dark'];
-
 const themesIterator = new CircleIterator(themes);
-
 const themeInitialState = _.head(themes);
+
+const createThemeName = theme => `${theme}-theme`;
+const setThemeClass = theme => {
+  const mainApp = document.querySelector('.main-app');
+
+  // remove all themes
+  themes.forEach(themeItem =>
+    mainApp.classList.remove(createThemeName(themeItem))
+  );
+  mainApp.classList.add(createThemeName(theme));
+};
+
+export const switchTemeEpic = (action$, state$) =>
+  action$.pipe(
+    ofType(SWITCH_THEME),
+    switchMap(() => {
+      const theme = getTheme(state$.value);
+      setThemeClass(theme);
+
+      return [];
+    })
+  );
 
 export default function themeReducer(theme = themeInitialState, action) {
   switch (action.type) {
