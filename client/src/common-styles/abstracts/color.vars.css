@@ -4,8 +4,10 @@
     --sub-header-bg-color: #FFDF00;
     --sub-header-text-color: black;
 
-    --secondary-attention-color: #69C62B;
-    --primary-text-color: white;
-    --primary-background-color: white;
-    --forms-background-color: #F1F1F1;
+    --phone-card-bg-color: silver;
+    --phone-card-name-color: white;
+    --phone-card-description-color: #FFDF00;
+
+    --details-button-bg-color: #88C23F;
+    --details-button-color: white;
 }

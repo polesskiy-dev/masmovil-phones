@@ -1,3 +1,21 @@
 ul {
     list-style-type: none;
 }
+
+@font-face {
+    font-family: 'Avenir Next Cyr Regular';
+    src: url('../../assets/fonts/AvenirNextCyr-Regular.eot');
+    src: url('../../assets/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/AvenirNextCyr-Regular.woff') format('woff'),
+    url('../../assets/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+
+    font-family: 'Avenir Next Cyr Regular';
+    font-size: 14px;
+    line-height: 1.42857;
+}

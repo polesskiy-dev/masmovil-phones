@@ -1,20 +1,17 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { compose } from 'redux';
 
 import getPhones from '../../../selectors/phones.selector';
 import PhoneCardComponent from '../../presentional/PhoneCardComponent/PhoneCardComponent';
-import { fetchPhonesRequest } from '../../../ducks/phones.duck';
+import withFetchingSpinner from '../../hocs/withFetchingSpinner';
+import withPhonesSubscription from '../../hocs/withPhonesSubscribtion';
 
 class PhoneListContainer extends PureComponent {
   static propTypes = {
-    fetchPhonesRequest: PropTypes.func.isRequired,
     phones: PropTypes.array.isRequired,
   };
-
-  componentDidMount() {
-    this.props.fetchPhonesRequest();
-  }
 
   render() {
     const { phones } = this.props;
@@ -25,7 +22,8 @@ class PhoneListContainer extends PureComponent {
   }
 }
 
-export default connect(
-  getPhones,
-  { fetchPhonesRequest }
+export default compose(
+  withPhonesSubscription,
+  withFetchingSpinner,
+  connect(getPhones)
 )(PhoneListContainer);

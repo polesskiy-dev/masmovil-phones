@@ -1,12 +1,22 @@
-.phone-card__wrapper {
+.phone-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
+    background-color: var(--phone-card-bg-color);
 }
 
-.phone-card__wrapper .phone-card__image {
-    width: var(--phone-image-width);
-    background: no-repeat 50% 50%;
-    background-size: contain;
+.phone-card .phone-card__image {
+    max-height: var(--phone-card-height);
+    object-fit: contain;
+}
+
+.phone-card .phone-card__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phone-card .phone-card__name {
+    color: var(--phone-card-name-color);
 }
