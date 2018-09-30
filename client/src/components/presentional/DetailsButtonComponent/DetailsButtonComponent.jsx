@@ -5,9 +5,7 @@ import './DetailsButtonComponent.css';
 
 const DetailsButtonComponent = () => (
   <button className="details-button">
-    <FormattedMessage
-      id="Buttons.detailsButtonCaption"
-    />
+    <FormattedMessage id="Buttons.detailsButtonCaption" />
   </button>
 );
 

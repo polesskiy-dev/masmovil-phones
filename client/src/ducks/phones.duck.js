@@ -17,7 +17,7 @@ export const fetchPhonesError = createAction(FETCH_PHONES_ERROR);
 export const fetchPhonesEpic = action$ =>
   action$.pipe(
     ofType(FETCH_PHONES_REQUEST),
-    delay(1000),
+    delay(3000),
     switchMap(() =>
       ajax.getJSON(apiUrls.PHONES_LIST_URL).pipe(
         map(res => fetchPhonesSuccess(res)),

@@ -1,0 +1,5 @@
+.phones-list {
+    background-color: var(--phones-list-bg-color);
+
+    padding: 48px 0;
+}

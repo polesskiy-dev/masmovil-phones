@@ -1,12 +1,11 @@
 :root {
-    --header-bg-color: black;
-    --header-text-color: white;
-    --sub-header-bg-color: #FFDF00;
-    --sub-header-text-color: black;
+    --app-menu-bg-color: #212529;
+    --app-menu-text-color: white;
 
-    --phone-card-bg-color: silver;
-    --phone-card-name-color: white;
-    --phone-card-description-color: #FFDF00;
+    --phone-card-bg-color: white;
+    --phone-card-name-color: black;
+
+    --phones-list-bg-color: #f8f9fa;
 
     --details-button-bg-color: #88C23F;
     --details-button-color: white;

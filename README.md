@@ -14,6 +14,8 @@
 
 ## About implementation
 [react-create-app](https://github.com/facebook/create-react-app) for rapid front-end development with some *eslint airbnb config* enhancement.
+[reactstrap](https://reactstrap.github.io/) as a design & components system for fancy look.
+I'm not plan to use old bootstrap grid, instead let's utilize modern grids. 
 
 ## Client implementation
 ### Project structure

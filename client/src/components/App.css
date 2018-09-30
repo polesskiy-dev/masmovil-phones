@@ -1,1 +1,4 @@
-
+.main-app {
+    display: grid;
+    grid-template-rows: 56px 408px auto;
+}

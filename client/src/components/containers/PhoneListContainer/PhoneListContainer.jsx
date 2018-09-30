@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 
+import './PhoneListContainer.css';
+
 import getPhones from '../../../selectors/phones.selector';
 import PhoneCardComponent from '../../presentional/PhoneCardComponent/PhoneCardComponent';
 import withFetchingSpinner from '../../hocs/withFetchingSpinner';
@@ -16,7 +18,7 @@ class PhoneListContainer extends PureComponent {
   render() {
     const { phones } = this.props;
 
-    return <section className="phones-list__wrapper">
+    return <section className="phones-list">
       {phones.map(phone => <PhoneCardComponent {...phone} key={phone.DeviceName}/>)}
     </section>;
   }

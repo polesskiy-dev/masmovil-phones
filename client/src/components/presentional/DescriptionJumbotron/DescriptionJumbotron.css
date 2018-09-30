@@ -1,0 +1,8 @@
+.app-jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 96px 32px;
+}

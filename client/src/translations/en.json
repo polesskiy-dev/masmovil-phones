@@ -1,3 +1,7 @@
 {
-  "Buttons.detailsButtonCaption": "Details"
+  "Buttons.detailsButtonCaption": "Details",
+
+  "DescriptionJumbotron.header": "Phone Catalog App example",
+  "DescriptionJumbotron.message": "Very simple product catalog app with some modern React features",
+  "DescriptionJumbotron.repoLinkCaption": "See source & description in Github"
 }

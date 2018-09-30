@@ -1,0 +1,12 @@
+.app-menu {
+    background-color: var(--app-menu-bg-color);
+    color: var(--app-menu-text-color);
+
+    height: var(--app-menu-height);
+    padding-left: 56px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
