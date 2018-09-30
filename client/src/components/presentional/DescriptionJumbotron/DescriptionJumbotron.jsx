@@ -13,7 +13,12 @@ const DescriptionJumbotron = () => (
     <p className="lead text-muted">
       <FormattedMessage id="DescriptionJumbotron.message" />
     </p>
-    <a href="https://github.com/polesskiy-dev/masmovil-phones" className="btn btn-primary">
+    <a
+      href="https://github.com/polesskiy-dev/masmovil-phones"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary"
+    >
       <FormattedMessage id="DescriptionJumbotron.repoLinkCaption" />
     </a>
   </section>

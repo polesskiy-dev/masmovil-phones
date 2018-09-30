@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../common-styles/layout/grid.css';
 import '../common-styles/abstracts/color.vars.css';
 import '../common-styles/abstracts/font.vars.css';
-import '../common-styles/abstracts/size.vars.css';
 import '../common-styles/base/base.css';
 import '../common-styles/base/normalize.css';
 import './App.css';

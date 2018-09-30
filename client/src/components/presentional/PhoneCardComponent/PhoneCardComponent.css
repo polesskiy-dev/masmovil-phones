@@ -10,8 +10,10 @@
 }
 
 .phone-card .phone-card__image {
-    max-height: var(--phone-card-height);
+    max-height: 256px;
     object-fit: contain;
+
+    padding: 16px;
 }
 
 .phone-card .phone-card__description {

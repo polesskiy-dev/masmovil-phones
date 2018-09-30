@@ -1,8 +1,8 @@
 .app-menu {
     background-color: var(--app-menu-bg-color);
     color: var(--app-menu-text-color);
+    height: 100%;
 
-    height: var(--app-menu-height);
     padding-left: 56px;
 
     display: flex;

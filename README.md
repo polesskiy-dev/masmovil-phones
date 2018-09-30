@@ -10,7 +10,7 @@
     [ ] Theme switching
     [ ] Unit tests
     [ ] API docs
-    [x] Travis
+    [x] Travis CI
 
 ## About implementation
 [react-create-app](https://github.com/facebook/create-react-app) for rapid front-end development with some *eslint airbnb config* enhancement.

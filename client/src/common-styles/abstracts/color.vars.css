@@ -1,11 +1,13 @@
 :root {
+    --main-bg-color: #f8f9fa;
+
     --app-menu-bg-color: #212529;
     --app-menu-text-color: white;
 
+    --app-jumbotron-bg-color: white;
+
     --phone-card-bg-color: white;
     --phone-card-name-color: black;
-
-    --phones-list-bg-color: #f8f9fa;
 
     --details-button-bg-color: #88C23F;
     --details-button-color: white;
