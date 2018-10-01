@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'reactstrap';
 import { FormattedMessage } from 'react-intl';
 
 import './DetailsButtonComponent.css';
 
 const DetailsButtonComponent = ({ onClick }) => (
-  <button className="details-button" onClick={onClick}>
+  <Button color="success" className="details-button" onClick={onClick}>
     <FormattedMessage id="Buttons.detailsButtonCaption" />
-  </button>
+  </Button>
 );
 
 DetailsButtonComponent.propTypes = {

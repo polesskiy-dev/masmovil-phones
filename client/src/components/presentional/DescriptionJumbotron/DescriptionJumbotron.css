@@ -7,4 +7,5 @@
     padding: 96px 32px;
 
     background-color: var(--app-jumbotron-bg-color);
+    color: var(--app-jumbotron-color);
 }

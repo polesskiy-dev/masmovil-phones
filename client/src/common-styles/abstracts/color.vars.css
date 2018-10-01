@@ -1,6 +1,4 @@
 :root {
-    --details-button-bg-color: #88C23F;
-    --details-button-color: white;
     --main-bg-color: #f8f9fa;
 }
 
@@ -9,25 +7,27 @@
     --app-menu-text-color: white;
 
     --app-jumbotron-bg-color: white;
+    --app-jumbotron-color: black;
 
     --phone-card-bg-color: white;
-    --phone-card-name-color: black;
+    --phone-card-color: black;
 
     --modal-bg-color: white;
     --modal-color: black;
 }
 
 .dark-theme {
-    --main-bg-color: black;
+    --main-bg-color: #3C4556;
 
     --app-menu-bg-color: white;
     --app-menu-text-color: black;
 
-    --app-jumbotron-bg-color: black;
+    --app-jumbotron-bg-color: #3C4556;
+    --app-jumbotron-color: white;
 
-    --phone-card-bg-color: black;
-    --phone-card-name-color: white;
+    --phone-card-bg-color: #282A36;
+    --phone-card-color: white;
 
-    --modal-bg-color: black;
+    --modal-bg-color: #282A36;
     --modal-color: white
 }

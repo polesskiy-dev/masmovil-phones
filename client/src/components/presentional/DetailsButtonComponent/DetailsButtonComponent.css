@@ -1,21 +1,10 @@
 .details-button {
-    background-color: var(--details-button-bg-color);
-    color: var(--details-button-color);
-
-    padding: 6px 12px;
-
-    font-size: 14px;
-    line-height: 1.42857;
-    text-transform: uppercase;
-    font-weight: 800;
-
-    border-radius: 0;
-    border: 1px solid transparent;
-
     text-decoration: none;
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
+
+    font-size: 1.2em;
 
     transition: all .35s cubic-bezier(.25,.46,.45,.94);
 }

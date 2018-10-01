@@ -25,5 +25,11 @@
 }
 
 .phone-card .phone-card__name {
-    color: var(--phone-card-name-color);
+    color: var(--phone-card-color);
+
+    font-size: 1.2em;
+}
+
+.phone-card  .phone-card__details {
+    color: var(--phone-card-color);
 }

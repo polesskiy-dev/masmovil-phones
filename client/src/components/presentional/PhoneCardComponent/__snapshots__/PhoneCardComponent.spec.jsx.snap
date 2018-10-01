@@ -32,8 +32,9 @@ exports[`<PhoneDetailComponent/ > renders correctly with all required fields 1`]
       </ul>
     </div>
     <button
-      className="details-button"
+      className="details-button btn btn-success"
       onClick={[Function]}
+      type="button"
     >
       <span>
         Details

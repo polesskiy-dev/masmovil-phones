@@ -41,8 +41,9 @@ exports[`<PhoneListContainerRaw/ > renders correctly with phones list 1`] = `
         </ul>
       </div>
       <button
-        className="details-button"
+        className="details-button btn btn-success"
         onClick={[Function]}
+        type="button"
       >
         <span>
           Details
