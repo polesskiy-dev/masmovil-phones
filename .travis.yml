@@ -1,15 +1,16 @@
 language: node_js
-
 node_js:
 - 10
-
 cache:
   directories:
-  - node_modules # NPM packages
-
+  - node_modules
 install:
 - npm install
-
 script:
 - npm run build
 - npm run test
+deploy:
+  provider: heroku
+  api_key:
+    secure: efoIIG6MFfiPaPCyWDMt/biDjbKMOCRHI9TJ3DIgwuzCamR9akSPViXG2/nfNr5bCP21yBnBfcXxOxln4YygJhpsGMX8TM6Pq08qCm9SY8h2zMUUate/RQ7mM5A24mlmOUfDmnaAQ8KB9lENs748PdKnmt+3SF/XkmN9GAujEkNekojltWdIKrWR5XG3E4lRiuCkuPYPRD2bhuHV/EjuFG6uxTZbhlC4OTBXGg/5wU9UUxjjQQLgvQN/ZQ5G5Ouzs0VFjrd5kFRHJ7Qs8uhWpKFdbHWgHTRmnWO5Ctw3DqOHjuo61svrwMX0BSmDoxOOiGXSQUZ6Q+OBSvVShSSq99EtzydLq24g7ju2eYd+e/MgywVSNrY3kGGjkevGFNeNfKDYzEpM54nusyVSTPz40yvPLr/X1hOreD+J8WL8PPSCxyhE8F0egAULz2vSsWhN5TOGO0ppcub+i52Fxy2KRIRqNU8qJIeD47hffpYXpco/CqqdX6nUlymX+vB4OKgxJ1/mifYA+5aao+FssqQyHnukQzfu1n0PZurHRyQcJ20710zn5z1BvN5p/hDwAjYhkluttTft1L+X5QkD/PQIedDgrvg9XlznDoojIYqez3uHdVSn3bjKLYopXk/RBCnigKfiU1BfosNH3TsgDOFE5N6n/Izne9OlTEtAq2Y4szI=
+  app: masmovil-phones

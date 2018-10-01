@@ -4,13 +4,13 @@
 
 ## Few words about dev features
 
-    [ ] Deploy on Heroku
+    [x] Travis CI
+    [ ] Deploy on Heroku Travis pipeline
     [ ] Dockerazing
     [ ] Internationalization EN/ES
     [ ] Theme switching
     [ ] Unit tests
     [ ] API docs
-    [x] Travis CI
 
 ## About implementation
 [react-create-app](https://github.com/facebook/create-react-app) for rapid front-end development with some *eslint airbnb config* enhancement.

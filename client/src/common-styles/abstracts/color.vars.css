@@ -1,6 +1,10 @@
-.light-theme {
+:root {
+    --details-button-bg-color: #88C23F;
+    --details-button-color: white;
     --main-bg-color: #f8f9fa;
+}
 
+.light-theme {
     --app-menu-bg-color: #212529;
     --app-menu-text-color: white;
 
@@ -8,9 +12,6 @@
 
     --phone-card-bg-color: white;
     --phone-card-name-color: black;
-
-    --details-button-bg-color: #88C23F;
-    --details-button-color: white;
 }
 
 .dark-theme {
@@ -23,7 +24,4 @@
 
     --phone-card-bg-color: black;
     --phone-card-name-color: white;
-
-    --details-button-bg-color: #88C23F;
-    --details-button-color: white;
 }

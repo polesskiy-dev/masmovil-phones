@@ -20,11 +20,14 @@ const AppMenuHeader = ({ switchLanguage, switchTheme, language, theme }) => (
     </header>
     <ul className="app-menu__menu">
       <li>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#" className="app-menu__item" onClick={() => switchLanguage()}>
-          <FormattedMessage id="AppMenuHeader.language" /> {language.toUpperCase()}
+          <FormattedMessage id="AppMenuHeader.language" />{' '}
+          {language.toUpperCase()}
         </a>
       </li>
       <li>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href="#" className="app-menu__item" onClick={() => switchTheme()}>
           <FormattedMessage id="AppMenuHeader.theme" /> {theme.toUpperCase()}
         </a>
