@@ -8,12 +8,12 @@ import "./PhoneListContainer.css";
 
 import getPhones from "../../../selectors/phones.selector";
 import PhoneCardComponent from "../../presentional/PhoneCardComponent/PhoneCardComponent";
-import PhoneDetailModal from '../PhoneDetailModal/PhoneDetailModal'
+import PhoneDetailModal from '../PhoneDetailModal/PhoneDetailModal';
 import withFetchingSpinner from "../../hocs/withFetchingSpinner";
 import withPhonesSubscription from "../../hocs/withPhonesSubscribtion";
 import { filterByDeviceName } from "../../../helpers/filter-phones.helpers";
 
-class PhoneListContainer extends PureComponent {
+class PhoneListContainerRaw extends PureComponent {
   static propTypes = {
     phones: PropTypes.array.isRequired
   };
@@ -51,9 +51,11 @@ class PhoneListContainer extends PureComponent {
     </Fragment>);
   }
 }
-
-export default compose(
+const PhoneListContainer = compose(
   withPhonesSubscription,
   withFetchingSpinner,
   connect(getPhones)
-)(PhoneListContainer);
+)(PhoneListContainerRaw);
+
+export { PhoneListContainerRaw }
+export default PhoneListContainer

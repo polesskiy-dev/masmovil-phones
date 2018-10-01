@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhoneDetailModal/ > renders correctly when Modal is closed 1`] = `<div />`;

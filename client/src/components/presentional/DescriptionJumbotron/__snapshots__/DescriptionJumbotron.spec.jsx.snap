@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DescriptionJumbotron/ > renders correctly with all required fields 1`] = `
+<section
+  className="app-jumbotron"
+>
+  <header>
+    <h1
+      className="jumbotron-heading"
+    >
+      <span>
+        Phone Catalog App example
+      </span>
+    </h1>
+  </header>
+  <p
+    className="lead text-muted"
+  >
+    <span>
+      Very simple product catalog app with some modern React features
+    </span>
+  </p>
+  <a
+    className="btn btn-primary"
+    href="https://github.com/polesskiy-dev/masmovil-phones"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span>
+      See source & description in Github
+    </span>
+  </a>
+</section>
+`;

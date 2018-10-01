@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Modal, ModalHeader, ModalBody} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 import './PhoneDetailModal.css';
 
@@ -14,7 +14,11 @@ const PhoneDetailModal = ({
   selectedPhone,
 }) => (
   <ConnectedIntlProvider>
-    <Modal isOpen={modalIsOpen} toggle={toggleModal} className="phone-detail-modal">
+    <Modal
+      isOpen={modalIsOpen}
+      toggle={toggleModal}
+      className="phone-detail-modal"
+    >
       <ModalHeader toggle={toggleModal}>{selectedDeviceName}</ModalHeader>
       <ModalBody>
         <PhoneDetailComponent {...selectedPhone} />

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppMenuHeaderRaw/ > renders correctly with all required fields 1`] = `
+<div
+  className="app-menu"
+>
+  <header>
+    <h1>
+      <span>
+        Welcome!
+      </span>
+    </h1>
+  </header>
+  <ul
+    className="app-menu__menu"
+  >
+    <li>
+      <div
+        className="menu-button__wrapper"
+      >
+        <button
+          className="menu-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            Language:
+          </span>
+           
+          EN
+        </button>
+      </div>
+    </li>
+    <li>
+      <div
+        className="menu-button__wrapper"
+      >
+        <button
+          className="menu-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            Language:
+          </span>
+           
+          LIGHT
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

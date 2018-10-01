@@ -12,7 +12,7 @@ import { switchTheme } from '../../../ducks/theme.duck';
 import { getLanguage } from '../../../selectors/language.selector';
 import { getTheme } from '../../../selectors/theme.selector';
 
-const AppMenuHeader = ({ switchLanguage, switchTheme, language, theme }) => (
+const AppMenuHeaderRaw = ({ switchLanguage, switchTheme, language, theme }) => (
   <div className="app-menu">
     <header>
       <h1>
@@ -38,16 +38,19 @@ const AppMenuHeader = ({ switchLanguage, switchTheme, language, theme }) => (
   </div>
 );
 
-AppMenuHeader.propTypes = {
+AppMenuHeaderRaw.propTypes = {
   switchLanguage: PropTypes.func.isRequired,
   theme: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
 };
 
-export default connect(
+const AppMenuHeader = connect(
   createSelector(getLanguage, getTheme, (language, theme) => ({
     language,
     theme,
   })),
   { switchLanguage, switchTheme }
-)(AppMenuHeader);
+)(AppMenuHeaderRaw);
+
+export { AppMenuHeaderRaw };
+export default AppMenuHeader;

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhoneListContainerRaw/ > renders correctly with empty phones list 1`] = `
+<section
+  className="phones-list"
+/>
+`;
+
+exports[`<PhoneListContainerRaw/ > renders correctly with phones list 1`] = `
+<section
+  className="phones-list"
+>
+  <article
+    className="phone-card"
+  >
+    <img
+      alt="Apple iPhone"
+      className="phone-card__image"
+      src="https://upload.wikimedia.org/wikipedia/commons/0/02/IPhone_2G_PSD_Mock.png"
+    />
+    <div
+      className="phone-card__description"
+    >
+      <div
+        className="phone-card__text-description"
+      >
+        <p
+          className="phone-card__name"
+        >
+          Apple iPhone
+        </p>
+        <ul
+          className="phone-card__details"
+        >
+          <li>
+            TFT capacitive touchscreen, 16M colors
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div>
+      <button
+        className="details-button"
+        onClick={[Function]}
+      >
+        <span>
+          Details
+        </span>
+      </button>
+    </div>
+  </article>
+</section>
+`;

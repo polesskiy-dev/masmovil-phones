@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhoneDetailComponent/ > renders correctly with all required fields 1`] = `
+<article
+  className="phone-card"
+>
+  <img
+    alt=""
+    className="phone-card__image"
+    src=""
+  />
+  <div
+    className="phone-card__description"
+  >
+    <div
+      className="phone-card__text-description"
+    >
+      <p
+        className="phone-card__name"
+      >
+        
+      </p>
+      <ul
+        className="phone-card__details"
+      >
+        <li>
+          
+        </li>
+        <li>
+          
+        </li>
+      </ul>
+    </div>
+    <button
+      className="details-button"
+      onClick={[Function]}
+    >
+      <span>
+        Details
+      </span>
+    </button>
+  </div>
+</article>
+`;

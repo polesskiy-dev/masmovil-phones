@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhoneDetailComponent/ > renders correctly with all required fields 1`] = `
+<article
+  className="phone-detail"
+>
+  <img
+    alt=""
+    className="phone-detail__image"
+    src=""
+  />
+  <dl
+    className="phone-detail__description"
+  >
+    <dt>
+      <span>
+        Type
+      </span>
+    </dt>
+    <dd>
+      
+    </dd>
+    <dt>
+      <span>
+        Size
+      </span>
+    </dt>
+    <dd>
+      
+    </dd>
+    <dt>
+      <span>
+        Technology
+      </span>
+    </dt>
+    <dd>
+      
+    </dd>
+    <dt>
+      <span>
+        Announced
+      </span>
+    </dt>
+    <dd>
+      
+    </dd>
+  </dl>
+</article>
+`;
