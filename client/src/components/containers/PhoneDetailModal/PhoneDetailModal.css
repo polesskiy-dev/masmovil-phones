@@ -1,0 +1,4 @@
+.phone-detail-modal .modal-content {
+    background-color: var(--modal-bg-color);
+    color: var(--modal-color);
+}

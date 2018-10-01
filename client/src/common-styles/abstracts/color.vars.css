@@ -12,6 +12,9 @@
 
     --phone-card-bg-color: white;
     --phone-card-name-color: black;
+
+    --modal-bg-color: white;
+    --modal-color: black;
 }
 
 .dark-theme {
@@ -24,4 +27,7 @@
 
     --phone-card-bg-color: black;
     --phone-card-name-color: white;
+
+    --modal-bg-color: black;
+    --modal-color: white
 }

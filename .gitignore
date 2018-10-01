@@ -4,6 +4,7 @@
 npm-debug.log
 
 # client
+./client/build
 ./client/node_modules
 ./client/npm-debug.log
 

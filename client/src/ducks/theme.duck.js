@@ -15,13 +15,13 @@ const themeInitialState = _.head(themes);
 
 const createThemeName = theme => `${theme}-theme`;
 const setThemeClass = theme => {
-  const mainApp = document.querySelector('.main-app');
+  const appBody = document.querySelector('body');
 
   // remove all themes
   themes.forEach(themeItem =>
-    mainApp.classList.remove(createThemeName(themeItem))
+    appBody.classList.remove(createThemeName(themeItem))
   );
-  mainApp.classList.add(createThemeName(theme));
+  appBody.classList.add(createThemeName(theme));
 };
 
 export const switchTemeEpic = (action$, state$) =>

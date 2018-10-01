@@ -1,0 +1,15 @@
+.phone-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-detail .phone-detail__image {
+    max-height: 256px;
+    object-fit: contain;
+
+    padding: 0 16px;
+}
+
+.phone-detail .phone-detail__description {
+    margin-top: 16px;
+}

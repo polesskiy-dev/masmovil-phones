@@ -7,5 +7,10 @@
 
   "DescriptionJumbotron.header": "Ejemplo de la aplicación Phone Catalog",
   "DescriptionJumbotron.message": "Aplicación de catálogo de productos muy simple con algunas características modernas de React",
-  "DescriptionJumbotron.repoLinkCaption": "Ver fuente y descripción en Github"
+  "DescriptionJumbotron.repoLinkCaption": "Ver fuente y descripción en Github",
+
+  "Phone.Type": "Tipo",
+  "Phone.Size": "Tamaño",
+  "Phone.Technology": "Tecnología",
+  "Phone.Announced": "Anunciado"
 }

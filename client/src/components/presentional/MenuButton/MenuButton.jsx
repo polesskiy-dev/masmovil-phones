@@ -7,8 +7,7 @@ import './MenuButton.css';
 const MenuButton = ({ caption, messageId, onClick }) => (
   <div className="menu-button__wrapper">
     <button type="button" className="menu-button" onClick={() => onClick()}>
-      <FormattedMessage id={messageId} />
-      {caption}
+      <FormattedMessage id={messageId} /> {caption}
     </button>
   </div>
 );
