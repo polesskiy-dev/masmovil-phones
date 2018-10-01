@@ -6,6 +6,7 @@ import { createSelector } from 'reselect';
 
 import './AppMenuHeader.css';
 
+import MenuButton from '../../presentional/MenuButton/MenuButton';
 import { switchLanguage } from '../../../ducks/language.duck';
 import { switchTheme } from '../../../ducks/theme.duck';
 import { getLanguage } from '../../../selectors/language.selector';
@@ -20,17 +21,18 @@ const AppMenuHeader = ({ switchLanguage, switchTheme, language, theme }) => (
     </header>
     <ul className="app-menu__menu">
       <li>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a href="#" className="app-menu__item" onClick={() => switchLanguage()}>
-          <FormattedMessage id="AppMenuHeader.language" />{' '}
-          {language.toUpperCase()}
-        </a>
+        <MenuButton
+          messageId="AppMenuHeader.language"
+          caption={language.toUpperCase()}
+          onClick={switchLanguage}
+        />
       </li>
       <li>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a href="#" className="app-menu__item" onClick={() => switchTheme()}>
-          <FormattedMessage id="AppMenuHeader.theme" /> {theme.toUpperCase()}
-        </a>
+        <MenuButton
+          messageId="AppMenuHeader.language"
+          caption={theme.toUpperCase()}
+          onClick={switchTheme}
+        />
       </li>
     </ul>
   </div>

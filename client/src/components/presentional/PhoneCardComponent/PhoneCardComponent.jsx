@@ -5,7 +5,13 @@ import './PhoneCardComponent.css';
 
 import DetailsButtonComponent from '../DetailsButtonComponent/DetailsButtonComponent';
 
-const PhoneCardComponent = ({ DeviceName, img, type, os }) => (
+const PhoneCardComponent = ({
+  DeviceName,
+  img,
+  type,
+  os,
+  showPhoneDetails,
+}) => (
   <article className="phone-card">
     <img className="phone-card__image" src={img} alt={DeviceName} />
     <div className="phone-card__description">
@@ -16,7 +22,7 @@ const PhoneCardComponent = ({ DeviceName, img, type, os }) => (
           <li>{os}</li>
         </ul>
       </div>
-      <DetailsButtonComponent />
+      <DetailsButtonComponent onClick={() => showPhoneDetails(DeviceName)} />
     </div>
   </article>
 );
@@ -26,6 +32,7 @@ PhoneCardComponent.propTypes = {
   img: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   os: PropTypes.string.isRequired,
+  showPhoneDetails: PropTypes.func.isRequired,
 };
 
 export default PhoneCardComponent;

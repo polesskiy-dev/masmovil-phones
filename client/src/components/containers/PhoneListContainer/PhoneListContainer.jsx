@@ -15,11 +15,15 @@ class PhoneListContainer extends PureComponent {
     phones: PropTypes.array.isRequired,
   };
 
+  showPhoneDetails = deviceName => {
+    console.log(deviceName)
+  };
+
   render() {
     const { phones } = this.props;
 
     return <section className="phones-list">
-      {phones.map(phone => <PhoneCardComponent {...phone} key={phone.DeviceName}/>)}
+      {phones.map(phone => <PhoneCardComponent key={phone.DeviceName} showPhoneDetails={this.showPhoneDetails} {...phone} />)}
     </section>;
   }
 }
