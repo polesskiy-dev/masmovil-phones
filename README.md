@@ -6,11 +6,33 @@
 
     [x] Travis CI
     [x] Deploy on Heroku
-    [ ] Dockerazing
+    [x] Dockerazing
     [x] Internationalization EN/ES
-    [ ] Theme switching
-    [x] Responsive
+    [x] Theme switching
+    [x] Responsive (grid layout)
     [x] Unit tests
+    
+## How to start
+```
+$ git clone https://github.com/polesskiy-dev/masmovil-phones
+$ cd masmovil-phones
+$ npm install
+$ npm start
+# now you can open localhost:3001 in your browser
+```
+
+With Docker:
+```
+$ git clone https://github.com/polesskiy-dev/masmovil-phones
+$ cd masmovil-phones
+$ npm install
+# creating Docker image masmovil-phones
+$ docker build -t masmovil-phones .
+# let's run it
+$ docker run masmovil-phones
+# now you can open localhost:3000 in your browser
+```
+
 
 ## About implementation
 [react-create-app](https://github.com/facebook/create-react-app) for rapid front-end development with some *eslint airbnb config* enhancement.
