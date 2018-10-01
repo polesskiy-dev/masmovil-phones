@@ -15,7 +15,7 @@ import { getTheme } from '../../../selectors/theme.selector';
 const AppMenuHeaderRaw = ({ switchLanguage, switchTheme, language, theme }) => (
   <div className="app-menu">
     <header>
-      <h1>
+      <h1 className="app-menu__greeting">
         <FormattedMessage id="AppMenuHeader.greeting" />
       </h1>
     </header>

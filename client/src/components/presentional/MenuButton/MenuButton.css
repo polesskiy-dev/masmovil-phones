@@ -16,3 +16,11 @@
 .menu-button:hover{
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 480px) {
+    .menu-button__wrapper {
+        padding: 0 32px;
+        border: none;
+        border-top: 1px solid var(--app-menu-text-color);
+    }
+}

@@ -5,7 +5,9 @@ exports[`<AppMenuHeaderRaw/ > renders correctly with all required fields 1`] = `
   className="app-menu"
 >
   <header>
-    <h1>
+    <h1
+      className="app-menu__greeting"
+    >
       <span>
         Welcome!
       </span>
